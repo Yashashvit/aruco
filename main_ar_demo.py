@@ -38,7 +38,7 @@ while True:
 	# Detect markers on the gray image
 	res = aruco.detectMarkers(img_gray, aruco.getPredefinedDictionary(dictionary))
 
-# Yash added
+
 	aruco.drawDetectedMarkers(img_rgb, res[0], res[1]) 
 	cv2.imshow("AR-Example", cv2.cvtColor(img_rgb, cv2.COLOR_RGB2BGR))
 	key = cv2.waitKey(10)
